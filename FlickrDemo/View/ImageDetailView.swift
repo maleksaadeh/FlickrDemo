@@ -63,7 +63,7 @@ struct ImageDetailView: View {
         .navigationTitle("Image Details")
         // added share details
         .sheet(isPresented: $sharePresented) {
-            ActivityViewController(items: [image.largeImageURL, image.title])
+            ActivityViewController(items: [image.largeImageURL as Any, image.title])
         }
     }
     
